@@ -1,0 +1,54 @@
+/* navbar */
+.navbar-default {
+  background-color: rgb(24, 188, 156);
+  border-color: rgb(18, 143, 118);
+  color: black;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: aqua;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: aqua;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+/*Don't know what it does*/
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+.navbar-header a.navbar-brand {
+    margin-top: -15px;
+    margin-bottom: -20px;
+}
+.navbar-header a.navbar-brand h6 {
+    color: #ccc;
+}
+.navbar-form .form-group {
+  margin-left: 10px;
+}
+.navbar-form button {
+  margin-left: 10px;
+}
+.top-padding-med {
+  padding-top: 10px;
+}
+.margin-left-med {
+  margin-left: 10px;
+}
