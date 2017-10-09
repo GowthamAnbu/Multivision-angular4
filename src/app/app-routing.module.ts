@@ -5,6 +5,7 @@ import { CourseListComponent } from './courses/course-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CourseAllComponent } from './courses/course-all.component';
 import { CourseDetailComponent } from './courses/course-detail.component';
+import { SignupComponent } from './users/signup.component';
 
 const routes: Routes = [
   // map '/home' to the employee list component
@@ -20,6 +21,9 @@ const routes: Routes = [
   {
     path: 'courses/:id',
     component:CourseDetailComponent
+  },{
+    path: 'signup',
+    component: SignupComponent
   },
   // map '/' to '/home' as our default route
   {

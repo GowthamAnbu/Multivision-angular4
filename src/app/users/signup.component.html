@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="well">
+    <form class="form-horizontal" name="signupForm">
+      <fieldset>
+        <legend>New User Information</legend>
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="email">Email</label>
+          <div class="col-md-10">
+            <input class="form-control" name="email" type="email" placeholder="email" required="required"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="password">password</label>
+          <div class="col-md-10">
+            <input class="form-control" name="password" type="password" placeholder="password" required="required"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="fname">First Name</label>
+          <div class="col-md-10">
+            <input class="form-control" name="fname" type="text" placeholder="First Name" required="required"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="lname">Last Name</label>
+          <div class="col-md-10">
+            <input class="form-control" name="lname" type="text" placeholder="Last Name" required="required"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-10 col-md-offset-2">
+            <div class="pull-right">
+              <button class="btn btn-primary disabled">submit</button>&nbsp;<a class="btn btn-default" [routerLink]="['/']">cancel</a>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

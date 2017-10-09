@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRoutingModule } from "./app-routing.module";
 import { CourseAllComponent } from './courses/course-all.component';
 import { CourseDetailComponent } from './courses/course-detail.component';
+import { SignupComponent } from './users/signup.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CourseDetailComponent } from './courses/course-detail.component';
     CourseListComponent,
     PageNotFoundComponent,
     CourseAllComponent,
-    CourseDetailComponent
+    CourseDetailComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
