@@ -10,7 +10,7 @@
       <div class="panel-heading text-center">Featured Courses</div>
       <div class="panel-body">
         <div class="row" *ngFor="let course of filteredCourses">
-          <div class="col-md-12" *ngIf="course.featured == true">{{course.title}}</div>
+          <div class="col-md-12" *ngIf="course.featured == true"><a [routerLink]="['/courses',course._id]">{{course.title}}</a></div>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@
       <div class="panel-body">
         <div class="row" *ngFor="let course of filteredCourses">
           <div class="col-md-3">{{course.published | date:'MMM d'}}</div>
-          <div class="col-md-9">{{course.title}}</div>
+          <div class="col-md-9"><a [routerLink]="['/courses',course._id]">{{course.title}}</a></div>
         </div>
       </div>
     </div>

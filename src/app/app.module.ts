@@ -8,13 +8,17 @@ import { CourseListComponent } from './courses/course-list.component';
 import { CourseService } from './courses/course.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from "./app-routing.module";
+import { CourseAllComponent } from './courses/course-all.component';
+import { CourseDetailComponent } from './courses/course-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CourseListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CourseAllComponent,
+    CourseDetailComponent
   ],
   imports: [
     BrowserModule,

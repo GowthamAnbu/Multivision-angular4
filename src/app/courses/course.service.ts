@@ -24,4 +24,9 @@ private _courseUrl = "./api/courses/courses.json";
     console.log(err.message);
     return Observable.throw(err.message);
   }
+
+  getCourse(id: number): Observable<Course> {
+    return this.getCourses()
+        .map((courses: Course[]) => courses.find(c => c._id === id));
+}
 }

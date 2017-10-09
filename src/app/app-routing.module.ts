@@ -3,12 +3,23 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CourseListComponent } from './courses/course-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CourseAllComponent } from './courses/course-all.component';
+import { CourseDetailComponent } from './courses/course-detail.component';
 
 const routes: Routes = [
   // map '/home' to the employee list component
   {
     path: 'home',
     component: CourseListComponent,
+  },
+  //map courses to courseAllComponent
+  {
+    path: 'courses',
+    component:CourseAllComponent
+  },
+  {
+    path: 'courses/:id',
+    component:CourseDetailComponent
   },
   // map '/' to '/home' as our default route
   {
