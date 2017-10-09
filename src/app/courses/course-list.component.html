@@ -3,25 +3,25 @@
     <h1>Multivision</h1>
     <p>Welcome to Multivision!! The most comprehensive and Complete collection of Mean Stack Development</p>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    <div class="panel panel-primary">
-      <div class="panel-heading text-center">Featured Courses</div>
-      <div class="panel-body">
-        <div class="row" *ngFor="let course of filteredCourses">
-          <div class="col-md-12" *ngIf="course.featured == true"><a [routerLink]="['/courses',course._id]">{{course.title}}</a></div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">Featured Courses</div>
+        <div class="panel-body">
+          <div class="row" *ngFor="let course of filteredCourses">
+            <div class="col-md-12" *ngIf="course.featured == true"><a [routerLink]="['/courses',course._id]">{{course.title}}</a></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <div class="panel panel-primary">
-      <div class="panel-heading text-center">New Courses</div>
-      <div class="panel-body">
-        <div class="row" *ngFor="let course of filteredCourses">
-          <div class="col-md-3">{{course.published | date:'MMM d'}}</div>
-          <div class="col-md-9"><a [routerLink]="['/courses',course._id]">{{course.title}}</a></div>
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">New Courses</div>
+        <div class="panel-body">
+          <div class="row" *ngFor="let course of filteredCourses">
+            <div class="col-md-3">{{course.published | date:'MMM d'}}</div>
+            <div class="col-md-9"><a [routerLink]="['/courses',course._id]">{{course.title}}</a></div>
+          </div>
         </div>
       </div>
     </div>
